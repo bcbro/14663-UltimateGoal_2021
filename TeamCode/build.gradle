@@ -18,4 +18,10 @@ apply from: '../build.dependencies.gradle'
 dependencies {
     implementation project(':FtcRobotController')
     annotationProcessor files('lib/OpModeAnnotationProcessor.jar')
+    implementation 'org.openftc:easyopencv:1.4.4'
+//    implementation 'com.arcrobotics:ftclib:1.1.6'
+    // the following is optional if you want vision
+    implementation "com.noahbres.jotai:jotai:1.0.2"
+//    implementation 'com.arcrobotics.ftclib:vision:1.1.0'
+    implementation 'com.acmerobotics.roadrunner:core:0.5.3'
 }
